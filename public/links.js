@@ -1,1 +1,1 @@
-window.__FRIEND_LINKS__ = {}; 
+window.__FRIEND_LINKS__ = {};
