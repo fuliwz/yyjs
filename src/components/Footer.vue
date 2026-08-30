@@ -1,0 +1,1 @@
+<template><footer class="site-footer"><div class="footer-inner"><span>© {{new Date().getFullYear()}} 海角AV</span></div></footer></template><style scoped>.site-footer{padding:28px 16px 40px;color:#687178;font-size:12px}.footer-inner{width:min(1180px,100%);margin:0 auto;text-align:center}</style>
