@@ -1,0 +1,38 @@
+/* Global video-card layout: five per row on desktop/tablet, one per row on phones. */
+.video-grid,
+.recommend-grid,
+.related-block .recommend-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  column-gap: 12px;
+  row-gap: 20px;
+}
+
+/* Keep every video card visually consistent. */
+.video-card,
+.mini-card {
+  min-width: 0;
+  width: 100%;
+}
+
+.video-card .thumb,
+.mini-card .thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+/* Home popular module uses the same five-column card grid. */
+.popular-grid {
+  display: grid;
+  overflow: visible;
+  padding: 4px 0 3px;
+}
+
+@media (max-width: 700px) {
+  .video-grid,
+  .recommend-grid,
+  .related-block .recommend-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    column-gap: 0;
+    row-gap: 18px;
+  }
+}
